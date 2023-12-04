@@ -26,7 +26,7 @@ char *DIGITS[9] = {
 };
 
 int main(void) {
-    FILE *file = fopen("content/day_1.txt", "rb");
+    FILE *file = fopen("content/day_1_transform.txt", "rb");
 
     if (!file) {
         fprintf(stderr, "ERROR: Unable to open file\n");
