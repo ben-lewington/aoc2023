@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -xeo nounset
+
+cc -Wall -Werror -pedantic -ggdb src/day_$1.c -o target/day_$1
+
+./target/day_$1
