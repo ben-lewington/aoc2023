@@ -3,33 +3,14 @@
 #include <stdio.h>
 #include <sys/ucontext.h>
 
-#define READ_BUFFER_SIZE 1024
-char READ_BUFFER[READ_BUFFER_SIZE];
-
-#define LOG 1
-#if !LOG
-#define log(s, ...) {}
-#else
-#define log(s, ...) printf(s, __VA_ARGS__)
-#endif
-
-char *DIGITS[9] = {
-    "one",
-    "two",
-    "three",
-    "four",
-    "five",
-    "six",
-    "seven",
-    "eight",
-    "nine",
-};
+#define AOC_LOG 1
+#include "common.h"
 
 int main(void) {
     FILE *file = fopen("content/day_1.txt", "rb");
 
     if (!file) {
-        fprintf(stderr, "ERROR: Unable to open file\n");
+        elog(stderr, "ERROR: Unable to open file\n");
         return 1;
     }
 

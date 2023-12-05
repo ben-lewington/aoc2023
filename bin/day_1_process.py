@@ -1,6 +1,9 @@
+#!/usr/bin/env python3
+
 
 def repl_str(input: str) -> str:
     out = input
+
     DIGITS = [
         "one",
         "two",
