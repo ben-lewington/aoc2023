@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 CHECK_CODE_OFFSETS = [
     (-1, -1),
     (-1, 0),
@@ -8,10 +10,6 @@ CHECK_CODE_OFFSETS = [
     (1, 0),
     (1, 1),
 ]
-
-def is_special_char(input: str) -> bool:
-    return not (input.isdigit() or input == '.')
-
 
 if __name__ == "__main__":
     with open('content/day_3.txt', 'r') as f:
@@ -83,6 +81,5 @@ if __name__ == "__main__":
 
 
 
-    print(gears)
     print('Part 1', sum(valid.values()))
     print('Part 2', sum(gears.values()))
