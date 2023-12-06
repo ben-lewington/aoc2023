@@ -38,6 +38,4 @@ if __name__ == "__main__":
 
             num_offs[id + j + 1] = (a + card_count, b)
 
-        # print(id, card_count, win_count)
-
     print('Part 2', sum([x for x, _ in num_offs.values()]))
