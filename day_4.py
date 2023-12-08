@@ -1,4 +1,3 @@
-
 if __name__ == "__main__":
     with open('content/day_4.txt', 'r') as f:
         d = f.read()
